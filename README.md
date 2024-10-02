@@ -6,3 +6,5 @@
 
 ## 如何生成动态目录 
 TODO: README.md + Github Actions
+
+TODO: 数学公式有bug
