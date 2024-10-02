@@ -8,3 +8,9 @@
 TODO: README.md + Github Actions
 
 TODO: 数学公式有bug
+
+## 如何提高质量
+1. 尽量不要使用 `0-shot`
+2. 提问题
+3. 提供例子
+4. 主动与其他概念, 关系, 模型进行比较
