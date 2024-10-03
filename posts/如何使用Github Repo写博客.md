@@ -7,8 +7,9 @@
 
 ## 如何生成动态目录 
 README.md + Github Actions
+TODO: 按时间排序 Latest First
 
-## Todo
+## 公式
 数学公式有bug
 
 ## 如何提高质量
