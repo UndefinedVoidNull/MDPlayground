@@ -17,25 +17,33 @@ jobs:
         echo "Generating file links for README.md by commit date"
 
         # Create a temp file for the output
-        echo "# Blog" > links.md
+        echo "# Blog Contents" > links.md
 
         # Get the commit history with the date and affected files (Markdown and PDF only)
         git log --name-only --pretty=format:"## %ad" --date=short > commit_history.txt
 
         # Extract the files and format them as links under each commit date
         CURRENT_DATE=""
+        DECLARED_FILES=""
         while IFS= read -r line
         do
           if [[ "$line" =~ ^##\ [0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
             # If the line is a date, set it as the current date heading
-            CURRENT_DATE="$line"
-            echo "$CURRENT_DATE" >> links.md
+            if [[ "$CURRENT_DATE" != "$line" ]]; then
+              CURRENT_DATE="$line"
+              echo "$CURRENT_DATE" >> links.md
+              DECLARED_FILES=""  # Reset for each date
+            fi
           elif [[ "$line" =~ \.md$ || "$line" =~ \.pdf$ ]]; then
             # Ignore README.md as a link
             if [[ "$(basename "$line")" != "README.md" ]]; then
-              # Format the link without the file extension in the title
-              TITLE="${line%.*}"
-              echo "- [$(basename "$TITLE")]($line)" >> links.md
+              FILE_NAME=$(basename "$line")
+              TITLE="${FILE_NAME%.*}"  # Remove file extension
+              # Add only if the file has not been added for this date
+              if [[ ! "$DECLARED_FILES" =~ "$FILE_NAME" ]]; then
+                echo "- [$TITLE]($line)" >> links.md
+                DECLARED_FILES="$DECLARED_FILES $FILE_NAME"
+              fi
             fi
           fi
         done < commit_history.txt
