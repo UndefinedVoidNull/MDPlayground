@@ -63,9 +63,17 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Stash untracked files to avoid committing them
+        git stash --include-untracked
+
+        # Add and commit README.md only
         git add README.md
         git commit -m "Update README.md with file links by commit date"
         git push
+
+        # Restore untracked files after commit
+        git stash pop
 
     - name: Clean up temporary files
       run: |
