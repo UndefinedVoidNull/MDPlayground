@@ -5,12 +5,15 @@ name: Update README
 on:
   push:
     paths:
-      - 'posts/**/*.{md,pdf}'
+      - 'posts/**/*.md'
+      - 'posts/**/*.pdf'
       - '.github/scripts/update_readme.py'
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Grants write access to repository contents
 
     steps:
     - name: Checkout repository
