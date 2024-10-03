@@ -66,3 +66,7 @@ jobs:
         git add README.md
         git commit -m "Update README.md with file links by commit date"
         git push
+
+    - name: Clean up temporary files
+      run: |
+        rm -f commit_history.txt links.md temp_readme.md
