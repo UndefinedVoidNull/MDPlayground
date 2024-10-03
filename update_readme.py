@@ -1,40 +1,47 @@
-# update_readme.py
+# .github/workflows/update-readme.yml
 
-import os
-from datetime import datetime
+name: Update README
 
-# Define the posts directory
-posts_directory = 'posts'
+on:
+  push:
+    paths:
+      - 'posts/**/*.{md,pdf}'
+      - 'update_readme.py'
 
-# Excluded files (if any)
-excluded_files = {'README.md', 'update_readme.py'}
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
 
-# Initialize list to hold file info
-files = []
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch all history for pushing changes
 
-# Walk through the posts directory
-for root, _, filenames in os.walk(posts_directory):
-    for filename in filenames:
-        if filename.endswith(('.md', '.pdf')) and filename not in excluded_files:
-            filepath = os.path.join(root, filename)
-            # Convert to GitHub-friendly path
-            filepath = filepath.replace('\\', '/')
-            # Get the last modified time
-            timestamp = os.path.getmtime(filepath)
-            last_modified = datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
-            files.append((filepath, last_modified))
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
 
-# Sort files by last modified date descending
-files.sort(key=lambda x: x[1], reverse=True)
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
 
-# Generate README.md content
-readme_content = "# Blog Posts\n\n"
+    - name: Run update_readme.py
+      run: |
+        python update_readme.py
 
-for file, date in files:
-    name = os.path.splitext(os.path.basename(file))[0]
-    # Format the link to be relative
-    readme_content += f"- [{name}]({file}) - *Last updated: {date}*\n"
-
-# Write to README.md
-with open('README.md', 'w', encoding='utf-8') as f:
-    f.write(readme_content)
+    - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        # Check for changes
+        if [[ `git status --porcelain` ]]; then
+          git add README.md
+          git commit -m "Update README with latest blog posts [skip ci]"
+          git push
+        else
+          echo "No changes to README.md"
+        fi
