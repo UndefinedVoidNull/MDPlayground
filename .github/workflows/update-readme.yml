@@ -51,12 +51,13 @@ jobs:
     - name: Update README.md
       run: |
         # Extract everything before and after the START/END markers from README.md
-        awk 'BEGIN{flag=1} /<!-- START LIST -->/{print;flag=0} flag' README.md > temp_readme.md
-        cat links.md >> temp_readme.md
-        awk 'BEGIN{flag=0} /<!-- END LIST -->/{flag=1} flag' README.md >> temp_readme.md
+        awk 'BEGIN{flag=1} /<!-- START LIST -->/{print;flag=0} /<!-- END LIST -->/{flag=1;print} flag' README.md > temp_readme.md
+
+        # Insert the generated file links between the markers
+        awk '/<!-- START LIST -->/{print;system("cat links.md")}/<!-- END LIST -->/{print}' README.md > updated_readme.md
 
         # Replace the README.md file with the updated one
-        mv temp_readme.md README.md
+        mv updated_readme.md README.md
 
     - name: Commit changes
       run: |
