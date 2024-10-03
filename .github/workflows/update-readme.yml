@@ -39,7 +39,7 @@ jobs:
             if [[ "$(basename "$line")" != "README.md" ]]; then
               FILE_NAME=$(basename "$line")
               TITLE="${FILE_NAME%.*}"  # Remove file extension
-              # Add only if the file has not been added for this date
+              # Add only if the file has not been added for this date (modified or new)
               if [[ ! "$DECLARED_FILES" =~ "$FILE_NAME" ]]; then
                 echo "- [$TITLE]($line)" >> links.md
                 DECLARED_FILES="$DECLARED_FILES $FILE_NAME"
