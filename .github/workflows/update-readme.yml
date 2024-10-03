@@ -1,80 +1,46 @@
-name: Update README with File Links by Commit Date
+# .github/workflows/update-readme.yml
+
+name: Update README
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'posts/**/*.{md,pdf}'
+      - 'update_readme.py'
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch all history for pushing changes
 
-    - name: Generate list of markdown and PDF files by commit date
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
       run: |
-        echo "Generating file links for README.md by commit date"
+        # If your script requires additional Python packages, install them here
+        pip install --upgrade pip
 
-        # Create a temp file for the output
-        echo "# Blog Contents" > links.md
-
-        # Get the commit history with the date and affected files (Markdown and PDF only)
-        git log --name-only --pretty=format:"## %ad" --date=short > commit_history.txt
-
-        # Extract the files and format them as links under each commit date
-        CURRENT_DATE=""
-        DECLARED_FILES=""
-        while IFS= read -r line
-        do
-          if [[ "$line" =~ ^##\ [0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
-            # If the line is a date, set it as the current date heading
-            if [[ "$CURRENT_DATE" != "$line" ]]; then
-              CURRENT_DATE="$line"
-              echo "$CURRENT_DATE" >> links.md
-              DECLARED_FILES=""  # Reset for each date
-            fi
-          elif [[ "$line" =~ \.md$ || "$line" =~ \.pdf$ ]]; then
-            # Ignore README.md as a link
-            if [[ "$(basename "$line")" != "README.md" ]]; then
-              FILE_NAME=$(basename "$line")
-              TITLE="${FILE_NAME%.*}"  # Remove file extension
-              # Add only if the file has not been added for this date (modified or new)
-              if [[ ! "$DECLARED_FILES" =~ "$FILE_NAME" ]]; then
-                echo "- [$TITLE]($line)" >> links.md
-                DECLARED_FILES="$DECLARED_FILES $FILE_NAME"
-              fi
-            fi
-          fi
-        done < commit_history.txt
-
-    - name: Update README.md
+    - name: Run update_readme.py
       run: |
-        # Extract everything before and after the START/END markers from README.md
-        awk 'BEGIN{flag=1} /<!-- START LIST -->/{print;flag=0} /<!-- END LIST -->/{flag=1;print} flag' README.md > temp_readme.md
+        python update_readme.py
 
-        # Insert the generated file links between the markers
-        awk '/<!-- START LIST -->/{print;system("cat links.md")}/<!-- END LIST -->/{print}' README.md > updated_readme.md
-
-        # Replace the README.md file with the updated one
-        mv updated_readme.md README.md
-
-    - name: Commit changes
+    - name: Commit and push changes
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        
-        # Stash untracked files to avoid committing them
-        git stash --include-untracked
-
-        # Add and commit README.md only
-        git add README.md
-        git commit -m "Update README.md with file links by commit date"
-        git push
-
-        # Restore untracked files after commit
-        git stash pop
-
-    - name: Clean up temporary files
-      run: |
-        rm -f commit_history.txt links.md temp_readme.md
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        # Check for changes
+        if [[ `git status --porcelain` ]]; then
+          git add README.md
+          git commit -m "Update README with latest blog posts [skip ci]"
+          git push
+        else
+          echo "No changes to README.md"
+        fi
