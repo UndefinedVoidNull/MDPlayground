@@ -16,7 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 0  # Fetch all history for pushing changes
+        fetch-depth: 0  # Fetch all history for accurate modified times
 
     - name: Set up Python
       uses: actions/setup-python@v4
