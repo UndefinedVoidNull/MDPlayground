@@ -19,11 +19,12 @@ jobs:
         # Create a temp file for the output
         echo "# Blog Contents" > links.md
 
-        # Get the commit history with the date and affected files (Markdown and PDF only)
-        git log --name-only --pretty=format:"## %ad" --date=short > commit_history.txt
+        # Get the commit history with the date and affected files (Markdown and PDF only, excluding README.md)
+        git log --name-only --pretty=format:"## %ad" --date=short | grep -v 'README.md' > commit_history.txt
 
         # Extract the files and format them as links under each commit date
         CURRENT_DATE=""
+        DECLARED_FILES=()
         while IFS= read -r line
         do
           if [[ "$line" =~ ^##\ [0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
@@ -31,8 +32,11 @@ jobs:
             CURRENT_DATE="$line"
             echo "$CURRENT_DATE" >> links.md
           elif [[ "$line" =~ \.md$ || "$line" =~ \.pdf$ ]]; then
-            # If the line is a markdown or PDF file, format it as a link under the current date
-            echo "- [$(basename "$line")]($line)" >> links.md
+            # Only add the file link if it hasn't been declared yet
+            if [[ ! " ${DECLARED_FILES[@]} " =~ " ${line} " ]]; then
+              DECLARED_FILES+=("$line")
+              echo "- [$(basename "$line")]($line)" >> links.md
+            fi
           fi
         done < commit_history.txt
 
@@ -53,3 +57,4 @@ jobs:
         git add README.md
         git commit -m "Update README.md with file links by commit date"
         git push
+        
