@@ -13,13 +13,13 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Grants write access to repository contents
+      contents: write  # 授予工作流对仓库内容的写权限
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 0  # Fetch all history for accurate modified times
+        fetch-depth: 0  # 获取所有历史记录以确保准确的修改时间
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -38,7 +38,7 @@ jobs:
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        # Check for changes
+        # 检查是否有更改
         if [[ `git status --porcelain` ]]; then
           git add README.md
           git commit -m "Update README with latest blog posts [skip ci]"
