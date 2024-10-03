@@ -17,7 +17,7 @@ jobs:
         echo "Generating file links for README.md by commit date"
 
         # Create a temp file for the output
-        echo "# Blog Contents" > links.md
+        echo "# Blog" > links.md
 
         # Get the commit history with the date and affected files (Markdown and PDF only)
         git log --name-only --pretty=format:"## %ad" --date=short > commit_history.txt
