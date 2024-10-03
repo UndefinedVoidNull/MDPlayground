@@ -1,4 +1,4 @@
-# 解辖域化（Deterritorialization）与脱嵌（Disembedding）
+# 解辖域化（Deterritorialization）与脱嵌（Disembedding） 
 
 ## 相同点：
 1. **全球化背景**：  

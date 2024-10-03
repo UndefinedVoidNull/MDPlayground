@@ -1,4 +1,4 @@
-# 解辖域化（Deterritorialization）
+# 解辖域化（Deterritorialization） 
 **解辖域化**（Deterritorialization）是法国哲学家吉尔·德勒兹（Gilles Deleuze）和费利克斯·瓜塔里（Félix Guattari）提出的概念，最早出现在他们的著作《千高原》（A Thousand Plateaus）中。这个概念在哲学、社会理论和文化研究中具有重要影响，用来描述一种脱离、松散或解构既有结构、疆界或控制系统的过程。
 
 ## 解辖域化的含义
