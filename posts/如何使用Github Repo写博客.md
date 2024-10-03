@@ -1,3 +1,4 @@
+# 如何使用Github Repo写博客
 
 ## 如何编辑
 1. 将 `.com` 改成 `.dev`, 然后 `Enter`
@@ -7,7 +8,8 @@
 ## 如何生成动态目录 
 README.md + Github Actions
 
-TODO: 数学公式有bug
+## Todo
+数学公式有bug
 
 ## 如何提高质量
 1. 尽量不要使用 `0-shot`
