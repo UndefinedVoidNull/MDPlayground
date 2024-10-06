@@ -3,6 +3,7 @@
 ## 2024-10-06
 
 - [Cache](posts/Cache.md)
+- [KNN算法](posts/KNN%E7%AE%97%E6%B3%95.md)
 - [他异性（Otherness）](posts/%E4%BB%96%E5%BC%82%E6%80%A7%EF%BC%88Otherness%EF%BC%89.md)
 - [卡尔·施米特（Carl Schmitt）](posts/%E5%8D%A1%E5%B0%94%C2%B7%E6%96%BD%E7%B1%B3%E7%89%B9%EF%BC%88Carl%20Schmitt%EF%BC%89.md)
 - [国民经济行业分类 GBT 4754—2011](posts/%E5%9B%BD%E6%B0%91%E7%BB%8F%E6%B5%8E%E8%A1%8C%E4%B8%9A%E5%88%86%E7%B1%BB%20GBT%204754%E2%80%942011.pdf)
