@@ -2,6 +2,7 @@
 
 ## 2024-10-06
 
+- [Cache](posts/Cache.md)
 - [他异性（Otherness）](posts/%E4%BB%96%E5%BC%82%E6%80%A7%EF%BC%88Otherness%EF%BC%89.md)
 - [卡尔·施米特（Carl Schmitt）](posts/%E5%8D%A1%E5%B0%94%C2%B7%E6%96%BD%E7%B1%B3%E7%89%B9%EF%BC%88Carl%20Schmitt%EF%BC%89.md)
 - [国民经济行业分类 GBT 4754—2011](posts/%E5%9B%BD%E6%B0%91%E7%BB%8F%E6%B5%8E%E8%A1%8C%E4%B8%9A%E5%88%86%E7%B1%BB%20GBT%204754%E2%80%942011.pdf)
@@ -12,6 +13,7 @@
 - [尼克·兰德（Nick Land）](posts/%E5%B0%BC%E5%85%8B%C2%B7%E5%85%B0%E5%BE%B7%EF%BC%88Nick%20Land%EF%BC%89.md)
 - [测试](posts/%E6%B5%8B%E8%AF%95.md)
 - [特征值与线性映射](posts/%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84.md)
+- [置换与逆序数](posts/%E7%BD%AE%E6%8D%A2%E4%B8%8E%E9%80%86%E5%BA%8F%E6%95%B0.md)
 - [群 环 域 模](posts/%E7%BE%A4%20%E7%8E%AF%20%E5%9F%9F%20%E6%A8%A1.md)
 - [脱嵌（Disembedding）](posts/%E8%84%B1%E5%B5%8C%EF%BC%88Disembedding%EF%BC%89.md)
 - [解辖域化（Deterritorialization）](posts/%E8%A7%A3%E8%BE%96%E5%9F%9F%E5%8C%96%EF%BC%88Deterritorialization%EF%BC%89.md)
