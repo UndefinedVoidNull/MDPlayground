@@ -11,6 +11,7 @@
 - [如何构造实数集](posts/%E5%A6%82%E4%BD%95%E6%9E%84%E9%80%A0%E5%AE%9E%E6%95%B0%E9%9B%86.md)
 - [尼克·兰德（Nick Land）](posts/%E5%B0%BC%E5%85%8B%C2%B7%E5%85%B0%E5%BE%B7%EF%BC%88Nick%20Land%EF%BC%89.md)
 - [测试](posts/%E6%B5%8B%E8%AF%95.md)
+- [特征值与线性映射](posts/%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84.md)
 - [群 环 域 模](posts/%E7%BE%A4%20%E7%8E%AF%20%E5%9F%9F%20%E6%A8%A1.md)
 - [脱嵌（Disembedding）](posts/%E8%84%B1%E5%B5%8C%EF%BC%88Disembedding%EF%BC%89.md)
 - [解辖域化（Deterritorialization）](posts/%E8%A7%A3%E8%BE%96%E5%9F%9F%E5%8C%96%EF%BC%88Deterritorialization%EF%BC%89.md)
