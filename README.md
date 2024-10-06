@@ -9,6 +9,7 @@
 - [国际收支平衡表（Balance of Payments, BOP）](posts/%E5%9B%BD%E9%99%85%E6%94%B6%E6%94%AF%E5%B9%B3%E8%A1%A1%E8%A1%A8%EF%BC%88Balance%20of%20Payments%2C%20BOP%EF%BC%89.md)
 - [多重反对称线性函数](posts/%E5%A4%9A%E9%87%8D%E5%8F%8D%E5%AF%B9%E7%A7%B0%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0.md)
 - [大国政治的悲剧](posts/%E5%A4%A7%E5%9B%BD%E6%94%BF%E6%B2%BB%E7%9A%84%E6%82%B2%E5%89%A7.md)
+- [奇异值与奇异矩阵](posts/%E5%A5%87%E5%BC%82%E5%80%BC%E4%B8%8E%E5%A5%87%E5%BC%82%E7%9F%A9%E9%98%B5.md)
 - [如何使用Github Repo写博客](posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Github%20Repo%E5%86%99%E5%8D%9A%E5%AE%A2.md)
 - [如何构造实数集](posts/%E5%A6%82%E4%BD%95%E6%9E%84%E9%80%A0%E5%AE%9E%E6%95%B0%E9%9B%86.md)
 - [尼克·兰德（Nick Land）](posts/%E5%B0%BC%E5%85%8B%C2%B7%E5%85%B0%E5%BE%B7%EF%BC%88Nick%20Land%EF%BC%89.md)
