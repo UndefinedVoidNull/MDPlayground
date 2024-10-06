@@ -13,6 +13,7 @@
 - [如何使用Github Repo写博客](posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Github%20Repo%E5%86%99%E5%8D%9A%E5%AE%A2.md)
 - [如何构造实数集](posts/%E5%A6%82%E4%BD%95%E6%9E%84%E9%80%A0%E5%AE%9E%E6%95%B0%E9%9B%86.md)
 - [尼克·兰德（Nick Land）](posts/%E5%B0%BC%E5%85%8B%C2%B7%E5%85%B0%E5%BE%B7%EF%BC%88Nick%20Land%EF%BC%89.md)
+- [梯度下降算法](posts/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95.md)
 - [测试](posts/%E6%B5%8B%E8%AF%95.md)
 - [特征值与线性映射](posts/%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84.md)
 - [置换与逆序数](posts/%E7%BD%AE%E6%8D%A2%E4%B8%8E%E9%80%86%E5%BA%8F%E6%95%B0.md)
