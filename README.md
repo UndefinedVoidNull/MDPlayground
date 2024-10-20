@@ -1,6 +1,6 @@
 # Blog Posts
 
-## 2024-10-10
+## 2024-10-20
 
 - [Cache](posts/Cache.md)
 - [math-KNN算法](posts/math-KNN%E7%AE%97%E6%B3%95.md)
@@ -16,6 +16,7 @@
 - [国民经济行业分类 GBT 4754—2011](posts/%E5%9B%BD%E6%B0%91%E7%BB%8F%E6%B5%8E%E8%A1%8C%E4%B8%9A%E5%88%86%E7%B1%BB%20GBT%204754%E2%80%942011.pdf)
 - [国际收支平衡表（Balance of Payments, BOP）](posts/%E5%9B%BD%E9%99%85%E6%94%B6%E6%94%AF%E5%B9%B3%E8%A1%A1%E8%A1%A8%EF%BC%88Balance%20of%20Payments%2C%20BOP%EF%BC%89.md)
 - [大国政治的悲剧](posts/%E5%A4%A7%E5%9B%BD%E6%94%BF%E6%B2%BB%E7%9A%84%E6%82%B2%E5%89%A7.md)
+- [女频男角色总结](posts/%E5%A5%B3%E9%A2%91%E7%94%B7%E8%A7%92%E8%89%B2%E6%80%BB%E7%BB%93.md)
 - [如何使用Github Repo写博客](posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Github%20Repo%E5%86%99%E5%8D%9A%E5%AE%A2.md)
 - [尼克·兰德（Nick Land）](posts/%E5%B0%BC%E5%85%8B%C2%B7%E5%85%B0%E5%BE%B7%EF%BC%88Nick%20Land%EF%BC%89.md)
 - [测试](posts/%E6%B5%8B%E8%AF%95.md)
