@@ -14,6 +14,7 @@
 - [Structural form and Reduced form](posts/Structural%20form%20and%20Reduced%20form.md)
 - [他异性（Otherness）](posts/%E4%BB%96%E5%BC%82%E6%80%A7%EF%BC%88Otherness%EF%BC%89.md)
 - [卡尔·施米特（Carl Schmitt）](posts/%E5%8D%A1%E5%B0%94%C2%B7%E6%96%BD%E7%B1%B3%E7%89%B9%EF%BC%88Carl%20Schmitt%EF%BC%89.md)
+- [卢卡斯批判 VS 反身性](posts/%E5%8D%A2%E5%8D%A1%E6%96%AF%E6%89%B9%E5%88%A4%20VS%20%E5%8F%8D%E8%BA%AB%E6%80%A7.md)
 - [国民经济行业分类 GBT 4754—2011](posts/%E5%9B%BD%E6%B0%91%E7%BB%8F%E6%B5%8E%E8%A1%8C%E4%B8%9A%E5%88%86%E7%B1%BB%20GBT%204754%E2%80%942011.pdf)
 - [国际收支平衡表（Balance of Payments, BOP）](posts/%E5%9B%BD%E9%99%85%E6%94%B6%E6%94%AF%E5%B9%B3%E8%A1%A1%E8%A1%A8%EF%BC%88Balance%20of%20Payments%2C%20BOP%EF%BC%89.md)
 - [大国政治的悲剧](posts/%E5%A4%A7%E5%9B%BD%E6%94%BF%E6%B2%BB%E7%9A%84%E6%82%B2%E5%89%A7.md)
