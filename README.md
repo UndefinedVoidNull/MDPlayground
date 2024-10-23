@@ -1,6 +1,6 @@
 # Blog Posts
 
-## 2024-10-20
+## 2024-10-23
 
 - [Cache](posts/Cache.md)
 - [math-KNN算法](posts/math-KNN%E7%AE%97%E6%B3%95.md)
@@ -11,6 +11,7 @@
 - [math-特征值与线性映射](posts/math-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84.md)
 - [math-置换与逆序数](posts/math-%E7%BD%AE%E6%8D%A2%E4%B8%8E%E9%80%86%E5%BA%8F%E6%95%B0.md)
 - [math-群 环 域 模](posts/math-%E7%BE%A4%20%E7%8E%AF%20%E5%9F%9F%20%E6%A8%A1.md)
+- [Structural form and Reduced form](posts/Structural%20form%20and%20Reduced%20form.md)
 - [他异性（Otherness）](posts/%E4%BB%96%E5%BC%82%E6%80%A7%EF%BC%88Otherness%EF%BC%89.md)
 - [卡尔·施米特（Carl Schmitt）](posts/%E5%8D%A1%E5%B0%94%C2%B7%E6%96%BD%E7%B1%B3%E7%89%B9%EF%BC%88Carl%20Schmitt%EF%BC%89.md)
 - [国民经济行业分类 GBT 4754—2011](posts/%E5%9B%BD%E6%B0%91%E7%BB%8F%E6%B5%8E%E8%A1%8C%E4%B8%9A%E5%88%86%E7%B1%BB%20GBT%204754%E2%80%942011.pdf)
