@@ -15,7 +15,7 @@
   
 - **例子**：
   假设一个简单的供需模型：
-  - 需求方程：$Q_d = \alpha_1 - \beta_1 P + \epsilon_d$
+  - 需求方程：$ Q_d = \alpha_1 - \beta_1 P + \epsilon_d $
   - 供给方程：$Q_s = \alpha_2 + \beta_2 P + \epsilon_s$
   
   其中 $Q_d$ 和 $Q_s$ 分别表示需求量和供给量，$P$ 表示价格，$\alpha_1, \alpha_2, \beta_1, \beta_2$ 是模型中的参数，$\epsilon_d, \epsilon_s$ 是扰动项。这是一个典型的结构模型，因为它明确了供给和需求的经济行为关系。
