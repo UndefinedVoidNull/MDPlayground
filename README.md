@@ -2,7 +2,6 @@
 
 ## 2024-10-31
 
-- [Cache](posts/Cache.md)
 - [math-KNN算法](posts/math-KNN%E7%AE%97%E6%B3%95.md)
 - [math-多重反对称线性函数](posts/math-%E5%A4%9A%E9%87%8D%E5%8F%8D%E5%AF%B9%E7%A7%B0%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0.md)
 - [math-奇异值与奇异矩阵](posts/math-%E5%A5%87%E5%BC%82%E5%80%BC%E4%B8%8E%E5%A5%87%E5%BC%82%E7%9F%A9%E9%98%B5.md)
