@@ -22,6 +22,7 @@
 - [尼克·兰德（Nick Land）](posts/%E5%B0%BC%E5%85%8B%C2%B7%E5%85%B0%E5%BE%B7%EF%BC%88Nick%20Land%EF%BC%89.md)
 - [康德](posts/%E5%BA%B7%E5%BE%B7.md)
 - [测试](posts/%E6%B5%8B%E8%AF%95.md)
+- [海德格尔](posts/%E6%B5%B7%E5%BE%B7%E6%A0%BC%E5%B0%94.md)
 - [脱嵌（Disembedding）](posts/%E8%84%B1%E5%B5%8C%EF%BC%88Disembedding%EF%BC%89.md)
 - [解辖域化（Deterritorialization）](posts/%E8%A7%A3%E8%BE%96%E5%9F%9F%E5%8C%96%EF%BC%88Deterritorialization%EF%BC%89.md)
 - [解辖域化（Deterritorialization）与脱嵌（Disembedding）](posts/%E8%A7%A3%E8%BE%96%E5%9F%9F%E5%8C%96%EF%BC%88Deterritorialization%EF%BC%89%E4%B8%8E%E8%84%B1%E5%B5%8C%EF%BC%88Disembedding%EF%BC%89.md)
