@@ -21,6 +21,7 @@
 - [如何使用Github Repo写博客](posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Github%20Repo%E5%86%99%E5%8D%9A%E5%AE%A2.md)
 - [尼克·兰德（Nick Land）](posts/%E5%B0%BC%E5%85%8B%C2%B7%E5%85%B0%E5%BE%B7%EF%BC%88Nick%20Land%EF%BC%89.md)
 - [康德](posts/%E5%BA%B7%E5%BE%B7.md)
+- [德勒兹](posts/%E5%BE%B7%E5%8B%92%E5%85%B9.md)
 - [测试](posts/%E6%B5%8B%E8%AF%95.md)
 - [海德格尔](posts/%E6%B5%B7%E5%BE%B7%E6%A0%BC%E5%B0%94.md)
 - [脱嵌（Disembedding）](posts/%E8%84%B1%E5%B5%8C%EF%BC%88Disembedding%EF%BC%89.md)
