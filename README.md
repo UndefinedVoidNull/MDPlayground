@@ -29,6 +29,7 @@
 - [解辖域化（Deterritorialization）](posts/%E8%A7%A3%E8%BE%96%E5%9F%9F%E5%8C%96%EF%BC%88Deterritorialization%EF%BC%89.md)
 - [解辖域化（Deterritorialization）与脱嵌（Disembedding）](posts/%E8%A7%A3%E8%BE%96%E5%9F%9F%E5%8C%96%EF%BC%88Deterritorialization%EF%BC%89%E4%B8%8E%E8%84%B1%E5%B5%8C%EF%BC%88Disembedding%EF%BC%89.md)
 - [诸众](posts/%E8%AF%B8%E4%BC%97.md)
+- [货币哲学](posts/%E8%B4%A7%E5%B8%81%E5%93%B2%E5%AD%A6.md)
 - [阐释学（Hermeneutics）](posts/%E9%98%90%E9%87%8A%E5%AD%A6%EF%BC%88Hermeneutics%EF%BC%89.md)
 - [陌异性（Estrangement）](posts/%E9%99%8C%E5%BC%82%E6%80%A7%EF%BC%88Estrangement%EF%BC%89.md)
 - [鲍德里亚](posts/%E9%B2%8D%E5%BE%B7%E9%87%8C%E4%BA%9A.md)
