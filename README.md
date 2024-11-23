@@ -1,6 +1,6 @@
 # Blog Posts
 
-## 2024-10-31
+## 2024-11-23
 
 - [math-KNN算法](posts/math-KNN%E7%AE%97%E6%B3%95.md)
 - [math-多重反对称线性函数](posts/math-%E5%A4%9A%E9%87%8D%E5%8F%8D%E5%AF%B9%E7%A7%B0%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0.md)
@@ -20,6 +20,7 @@
 - [女频男角色总结](posts/%E5%A5%B3%E9%A2%91%E7%94%B7%E8%A7%92%E8%89%B2%E6%80%BB%E7%BB%93.md)
 - [如何使用Github Repo写博客](posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Github%20Repo%E5%86%99%E5%8D%9A%E5%AE%A2.md)
 - [尼克·兰德（Nick Land）](posts/%E5%B0%BC%E5%85%8B%C2%B7%E5%85%B0%E5%BE%B7%EF%BC%88Nick%20Land%EF%BC%89.md)
+- [康德](posts/%E5%BA%B7%E5%BE%B7.md)
 - [测试](posts/%E6%B5%8B%E8%AF%95.md)
 - [脱嵌（Disembedding）](posts/%E8%84%B1%E5%B5%8C%EF%BC%88Disembedding%EF%BC%89.md)
 - [解辖域化（Deterritorialization）](posts/%E8%A7%A3%E8%BE%96%E5%9F%9F%E5%8C%96%EF%BC%88Deterritorialization%EF%BC%89.md)
